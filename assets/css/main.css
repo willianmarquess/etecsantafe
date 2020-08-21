@@ -1,0 +1,83 @@
+nav .brand-logo img {
+    margin-top: 2px;
+    height: 64px;
+}
+
+.texto-justificado{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+nav {
+    height: 70px;
+}
+
+nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+    line-height: 70px;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.noticias{
+    margin-top: 30px;
+}
+
+@media only screen and (min-width: 601px) {
+    nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+        line-height: 70px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel.carousel-slider{
+        min-height: 200px;
+        max-height: 200px;
+        top: 0;
+        left: 0;
+    }
+    .noticias{
+        margin-top: 0px;
+    }
+
+
+}
+
+.dropdown-content{
+    top: 0;
+    margin-top: 70px;
+    min-width: 150px;
+}
+
+a.icone-vermelho{
+    color: brown;
+}
+
+.lermais{
+    text-decoration: underline;
+}
+
+.mapa{
+    width: 100%;
+    height: 400px;
+}
+
+.caixa-redes-sociais{
+    height: 150px;
+    margin: auto;
+    justify-content: center;
+}
+
+.icon-redes-sociais-facebook{
+    color: #3b5998;
+}
+
+.icon-redes-sociais-whatsapp{
+    color: #32CD32;
+}
+
+.icon-redes-sociais-instagram{
+    color: #DC143C;
+}
+
