@@ -20,6 +20,7 @@
       <div class="container">
         <div class="nav-wrapper">
           <a href="#" class="brand-logo"><img src="assets/img/logo-semfundo.png" alt=""></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a class="red-text text-darken-2 text-bold" href="#">INÍCIO</a></li>
             <li><a class="red-text text-darken-2 text-bold" href="#">INSTITUCIONAL</a></li>
@@ -34,6 +35,14 @@
       </div>
     </nav>
   </div>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Ínicio</a></li>
+    <li><a href="#">Institucional</a></li>
+    <li><a href="#">Cursos</a></li>
+    <li><a href="#">Alunos</a></li>
+    <li><a href="#">Professores</a></li>
+    <li><a href="#">Eventos</a></li>
+  </ul>
 
 
 
@@ -185,7 +194,7 @@
                 </li>
                 <li><i class="material-icons red-text text-darken-2">local_phone</i><a class="white-text" href="#"> (17)
                     3631-6564</a>
-                  
+
                 </li>
               </ul>
             </div>
@@ -258,6 +267,9 @@
 
       var carousel = document.querySelectorAll('.carousel');
       var instances = M.Carousel.init(carousel, { fullWidth: true, indicators: true });
+
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, []);
     });
   </script>
 </body>
