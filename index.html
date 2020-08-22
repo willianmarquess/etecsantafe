@@ -20,7 +20,7 @@
       <div class="container">
         <div class="nav-wrapper">
           <a href="#" class="brand-logo"><img src="assets/img/logo-semfundo.png" alt=""></a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons red-text text-darken-2">menu</i></a>
+          <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons red-text text-darken-2">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a class="red-text text-darken-2 text-bold" href="#">INÍCIO</a></li>
             <li><a class="red-text text-darken-2 text-bold" href="#">INSTITUCIONAL</a></li>
@@ -35,13 +35,42 @@
       </div>
     </nav>
   </div>
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="#">Ínicio</a></li>
-    <li><a href="#">Institucional</a></li>
-    <li><a href="#">Cursos</a></li>
-    <li><a href="#">Alunos</a></li>
-    <li><a href="#">Professores</a></li>
-    <li><a href="#">Eventos</a></li>
+
+  <ul id="slide-out" class="sidenav">
+    <li><a href="#!">Ínicio</a></li>
+    <li><a href="#!">Institucional</a></li>
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Cursos<i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#!">Técnico em Informática para Internet</a></li>
+              <li><a href="#!">Técnico em Administração</a></li>
+              <li><a href="#!">Técnico em Recursos Humanos</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="#!">Novotec (Técnico em Administração)</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#!">Alunos</a></li>
+    <li><a href="#!">Professores</a></li>
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Eventos<i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#!">Festa Caipira</a></li>
+              <li><a href="#!">Halloween</a></li>
+              <li><a href="#!">Etec na praça</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
   </ul>
 
 
@@ -264,6 +293,9 @@
 
       var dropdown = document.querySelectorAll('.dropdown-trigger');
       var instances = M.Dropdown.init(dropdown, {});
+
+      var collapsible = document.querySelectorAll('.collapsible');
+      var instances = M.Collapsible.init(collapsible, {});
 
       var carousel = document.querySelectorAll('.carousel');
       var instances = M.Carousel.init(carousel, { fullWidth: true, indicators: true });
