@@ -69,6 +69,10 @@ a.icone-vermelho{
     justify-content: center;
 }
 
+.mt-01{
+    margin-top: 10px;
+}
+
 .icon-redes-sociais-facebook{
     color: #3b5998;
 }
@@ -81,3 +85,42 @@ a.icone-vermelho{
     color: #DC143C;
 }
 
+.texto-card{
+    font-size: 18px;
+}
+
+.card .card-image .card-title {
+    padding: 5px !important;
+}
+
+.textojustificado{
+    text-align: justify;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.imagem-noticia{
+    width: 100%;
+}
+
+.corpo-card{
+    margin-top: 15px;
+}
+
+.italico{
+    font-style: oblique;
+}
+
+.caixa-facebook{
+    margin-top: 10px;
+}
+
+.card{
+    padding: 15px;
+}
+
+.card-panel{
+    min-height: 280px;
+}
